@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { MapPin, Award, BookOpen, Zap, Menu, X } from 'lucide-react';
+import { MapPin, Award, BookOpen, Zap, Menu, X, MessageSquare } from 'lucide-react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -15,7 +15,8 @@ export default function Header() {
     { href: '/ai-tools', label: 'AI Tools', icon: Zap },
     { href: '/scheduling', label: 'Schedule', icon: MapPin },
     { href: '/challenges', label: 'Challenges', icon: Award },
-    { href: '/analytics', label: 'Analytics', icon: Zap }
+    { href: '/analytics', label: 'Analytics', icon: Zap },
+    { href: '/feedback', label: 'Feedback', icon: MessageSquare }
   ];
 
   const isActive = (path: string) => location.pathname === path;

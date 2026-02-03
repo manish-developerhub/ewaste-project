@@ -100,6 +100,31 @@ export interface EWasteGuidelines {
 
 
 /**
+ * Collection ID: feedback
+ * Interface for Feedback
+ */
+export interface Feedback {
+  _id: string;
+  _createdDate?: Date;
+  _updatedDate?: Date;
+  /** @wixFieldType text */
+  feedbackType?: string;
+  /** @wixFieldType text */
+  feedbackMessage?: string;
+  /** @wixFieldType number */
+  rating?: number;
+  /** @wixFieldType text */
+  userEmail?: string;
+  /** @wixFieldType datetime */
+  submittedDate?: Date | string;
+  /** @wixFieldType text */
+  status?: string;
+  /** @wixFieldType text */
+  category?: string;
+}
+
+
+/**
  * Collection ID: recyclinglocations
  * Interface for RecyclingLocations
  */

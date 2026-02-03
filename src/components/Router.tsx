@@ -11,6 +11,7 @@ import AIToolsPage from '@/components/pages/AIToolsPage';
 import SchedulingPage from '@/components/pages/SchedulingPage';
 import ChallengesPage from '@/components/pages/ChallengesPage';
 import AnalyticsPage from '@/components/pages/AnalyticsPage';
+import FeedbackPage from '@/components/pages/FeedbackPage';
 
 // Layout component that includes ScrollToTop
 function Layout() {
@@ -89,6 +90,13 @@ const router = createBrowserRouter([
         element: <AnalyticsPage />,
         routeMetadata: {
           pageIdentifier: 'analytics',
+        },
+      },
+      {
+        path: "feedback",
+        element: <FeedbackPage />,
+        routeMetadata: {
+          pageIdentifier: 'feedback',
         },
       },
       {
