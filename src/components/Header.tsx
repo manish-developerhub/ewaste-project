@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { MapPin, Award, BookOpen, Menu, X } from 'lucide-react';
+import { MapPin, Award, BookOpen, Zap, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -11,7 +11,8 @@ export default function Header() {
   const navLinks = [
     { href: '/locations', label: 'Locations', icon: MapPin },
     { href: '/rewards', label: 'My Rewards', icon: Award },
-    { href: '/guidelines', label: 'Guidelines', icon: BookOpen }
+    { href: '/guidelines', label: 'Guidelines', icon: BookOpen },
+    { href: '/ai-tools', label: 'AI Tools', icon: Zap }
   ];
 
   const isActive = (path: string) => location.pathname === path;

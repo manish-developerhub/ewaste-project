@@ -7,6 +7,7 @@ import LocationsPage from '@/components/pages/LocationsPage';
 import LocationDetailsPage from '@/components/pages/LocationDetailsPage';
 import RewardsPage from '@/components/pages/RewardsPage';
 import GuidelinesPage from '@/components/pages/GuidelinesPage';
+import AIToolsPage from '@/components/pages/AIToolsPage';
 
 // Layout component that includes ScrollToTop
 function Layout() {
@@ -57,6 +58,13 @@ const router = createBrowserRouter([
         element: <GuidelinesPage />,
         routeMetadata: {
           pageIdentifier: 'guidelines',
+        },
+      },
+      {
+        path: "ai-tools",
+        element: <AIToolsPage />,
+        routeMetadata: {
+          pageIdentifier: 'ai-tools',
         },
       },
       {
