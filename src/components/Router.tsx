@@ -8,6 +8,9 @@ import LocationDetailsPage from '@/components/pages/LocationDetailsPage';
 import RewardsPage from '@/components/pages/RewardsPage';
 import GuidelinesPage from '@/components/pages/GuidelinesPage';
 import AIToolsPage from '@/components/pages/AIToolsPage';
+import SchedulingPage from '@/components/pages/SchedulingPage';
+import ChallengesPage from '@/components/pages/ChallengesPage';
+import AnalyticsPage from '@/components/pages/AnalyticsPage';
 
 // Layout component that includes ScrollToTop
 function Layout() {
@@ -65,6 +68,27 @@ const router = createBrowserRouter([
         element: <AIToolsPage />,
         routeMetadata: {
           pageIdentifier: 'ai-tools',
+        },
+      },
+      {
+        path: "scheduling",
+        element: <SchedulingPage />,
+        routeMetadata: {
+          pageIdentifier: 'scheduling',
+        },
+      },
+      {
+        path: "challenges",
+        element: <ChallengesPage />,
+        routeMetadata: {
+          pageIdentifier: 'challenges',
+        },
+      },
+      {
+        path: "analytics",
+        element: <AnalyticsPage />,
+        routeMetadata: {
+          pageIdentifier: 'analytics',
         },
       },
       {

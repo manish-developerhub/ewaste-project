@@ -21,6 +21,9 @@ export default function VoiceAssistant() {
     { command: 'find locations', description: 'Find nearby recycling locations' },
     { command: 'show guidelines', description: 'Display e-waste guidelines' },
     { command: 'check rewards', description: 'View your rewards' },
+    { command: 'schedule appointment', description: 'Book a disposal appointment' },
+    { command: 'show challenges', description: 'View community challenges' },
+    { command: 'check analytics', description: 'View bin analytics' },
     { command: 'help', description: 'Get assistance' },
   ];
 
@@ -97,10 +100,16 @@ export default function VoiceAssistant() {
       responseText = 'Showing e-waste guidelines and disposal instructions.';
     } else if (lowerText.includes('reward')) {
       responseText = 'Displaying your current rewards and achievements.';
+    } else if (lowerText.includes('schedule') || lowerText.includes('appointment')) {
+      responseText = 'Opening the scheduling system to book your disposal appointment.';
+    } else if (lowerText.includes('challenge')) {
+      responseText = 'Showing community challenges and recycling competitions.';
+    } else if (lowerText.includes('analytics') || lowerText.includes('bin')) {
+      responseText = 'Displaying predictive analytics for bin fill times and collection schedules.';
     } else if (lowerText.includes('help')) {
-      responseText = 'I can help you find locations, view guidelines, check rewards, and more. Just ask!';
+      responseText = 'I can help you find locations, view guidelines, check rewards, schedule appointments, view challenges, and check analytics. Just ask!';
     } else {
-      responseText = `I heard: "${text}". Try asking about locations, guidelines, or rewards.`;
+      responseText = `I heard: "${text}". Try asking about locations, guidelines, rewards, scheduling, challenges, or analytics.`;
     }
 
     setResponse(responseText);

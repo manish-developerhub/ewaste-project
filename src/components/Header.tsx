@@ -12,7 +12,10 @@ export default function Header() {
     { href: '/locations', label: 'Locations', icon: MapPin },
     { href: '/rewards', label: 'My Rewards', icon: Award },
     { href: '/guidelines', label: 'Guidelines', icon: BookOpen },
-    { href: '/ai-tools', label: 'AI Tools', icon: Zap }
+    { href: '/ai-tools', label: 'AI Tools', icon: Zap },
+    { href: '/scheduling', label: 'Schedule', icon: MapPin },
+    { href: '/challenges', label: 'Challenges', icon: Award },
+    { href: '/analytics', label: 'Analytics', icon: Zap }
   ];
 
   const isActive = (path: string) => location.pathname === path;

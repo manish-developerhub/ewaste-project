@@ -25,6 +25,58 @@ export interface Achievements {
 
 
 /**
+ * Collection ID: binanalytics
+ * Interface for BinAnalytics
+ */
+export interface BinAnalytics {
+  _id: string;
+  _createdDate?: Date;
+  _updatedDate?: Date;
+  /** @wixFieldType text */
+  binLocationId?: string;
+  /** @wixFieldType number */
+  currentFillPercentage?: number;
+  /** @wixFieldType datetime */
+  predictedFillDate?: Date | string;
+  /** @wixFieldType text */
+  collectionSchedule?: string;
+  /** @wixFieldType datetime */
+  lastCollectionDate?: Date | string;
+  /** @wixFieldType number */
+  averageFillRate?: number;
+}
+
+
+/**
+ * Collection ID: communitychallenges
+ * Interface for CommunityChallenges
+ */
+export interface CommunityChallenges {
+  _id: string;
+  _createdDate?: Date;
+  _updatedDate?: Date;
+  /** @wixFieldType text */
+  challengeName?: string;
+  /** @wixFieldType text */
+  challengeDescription?: string;
+  /** @wixFieldType date */
+  startDate?: Date | string;
+  /** @wixFieldType date */
+  endDate?: Date | string;
+  /** @wixFieldType number */
+  targetPoints?: number;
+  /** @wixFieldType number */
+  currentPoints?: number;
+  /** @wixFieldType number */
+  participantCount?: number;
+  /** @wixFieldType number */
+  rewardPoints?: number;
+  /** @wixFieldType image - Contains image URL, render with <Image> component, NOT as text */
+  challengeImage?: string;
+}
+
+
+/**
  * Collection ID: ewasteguidelines
  * Interface for EWasteGuidelines
  */
@@ -69,4 +121,29 @@ export interface RecyclingLocations {
   latitude?: number;
   /** @wixFieldType number */
   longitude?: number;
+}
+
+
+/**
+ * Collection ID: scheduling
+ * Interface for SchedulingSystem
+ */
+export interface SchedulingSystem {
+  _id: string;
+  _createdDate?: Date;
+  _updatedDate?: Date;
+  /** @wixFieldType text */
+  appointmentTitle?: string;
+  /** @wixFieldType date */
+  appointmentDate?: Date | string;
+  /** @wixFieldType time */
+  appointmentTime?: any;
+  /** @wixFieldType text */
+  serviceType?: string;
+  /** @wixFieldType text */
+  locationId?: string;
+  /** @wixFieldType number */
+  capacity?: number;
+  /** @wixFieldType text */
+  status?: string;
 }
