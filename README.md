@@ -1,6 +1,6 @@
-# Wixstro - Wix Astro Template
+ Astro Template
 
-A modern, full-featured Wix Astro template built with React, TypeScript, and Tailwind CSS. This template provides a solid foundation for building dynamic, interactive websites with Wix's powerful ecosystem.
+A modern, full-featured  Astro template built with React, TypeScript, and Tailwind CSS. This template provides a solid foundation for building dynamic, interactive websites with powerful ecosystem.
 
 ## 🚀 Features
 
@@ -8,7 +8,7 @@ A modern, full-featured Wix Astro template built with React, TypeScript, and Tai
 - **React Integration** - Full React support with JSX components
 - **TypeScript** - Type-safe development experience
 - **Tailwind CSS** - Utility-first CSS framework with custom components
-- **Wix Integration** - Seamless integration with Wix services and APIs
+- ** Integration** - Seamless integration with  services and APIs
 - **Modern UI Components** - Radix UI components with custom styling
 - **Authentication** - Built-in member authentication and protected routes
 - **CMS Integration** - Content management system integration
@@ -37,7 +37,7 @@ A modern, full-featured Wix Astro template built with React, TypeScript, and Tai
 
 - Node.js (version 18 or higher)
 - npm or yarn package manager
-- Wix account and site
+
 
 ### Installation
 
@@ -71,7 +71,7 @@ main/
 │   ├── lib/                # Utility functions
 │   ├── pages/              # Astro pages
 │   └── styles/             # Global styles
-├── integrations/           # Wix integrations
+├── integrations/           #integrations
 │   ├── cms/               # CMS integration
 │   └── members/           # Member authentication
 ├── public/                # Static assets
@@ -95,7 +95,7 @@ This template includes a comprehensive set of UI components built with Radix UI 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
-- `npm run release` - Release to Wix
+- `npm run release` - Release 
 - `npm run env` - Pull environment variables
 - `npm run check` - Type check with Astro
 - `npm run test:run` - Run tests
@@ -134,12 +134,7 @@ npm run build
 4. Run tests and linting
 5. Submit a pull request
 
-## 🆘 Support
-
-For support and questions:
-
-- Check the [Wix Developer Documentation](https://dev.wix.com/)
-- Review the [Astro Documentation](https://docs.astro.build/)
+umentation](https://docs.astro.build/)
 
 
 ---
